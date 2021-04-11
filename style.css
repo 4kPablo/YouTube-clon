@@ -1,0 +1,42 @@
+body {
+  background: #181818;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background: #202020;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border: 3px solid white;
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 25px;
+  cursor: pointer;
+  padding: 0px 11px;
+}
+
+.search input {
+  display: flex;
+  width: 570px
+}
+
+.user img {
+  border: 3px solid red;
+  max-width: 25px;
+  cursor: pointer;
+  padding: 0px 13px;
+}
+
+.user-icon {
+  max-width: 30px;
+}
