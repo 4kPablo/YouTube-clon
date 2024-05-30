@@ -6,7 +6,7 @@ import mi_biblioteca from "../assets/mi_biblioteca.png";
 
 export const BottomNavbar = () => {
   return (
-    <div className="flex fixed bottom-0 items-center justify-around w-full h-[49px] border-t border-gray-800 text-white *:flex-1 *:pointer-events-none">
+    <div className="flex fixed bottom-0 items-center justify-around w-full h-[49px] border-t bg-[#0f0f0f] border-gray-800 text-white *:flex-1 *:pointer-events-none">
       <div className="flex flex-col items-center">
         <img src={inicio} alt="Inicio" className="h-6 mb-[-2px]" />
         <p className="font-[Roboto] text-xs">Inicio</p>

@@ -15,6 +15,7 @@ export const FilterBar = () => {
           JavaScript
         </p>
         <p className="bg-[#FFFFFF1A] text-white place-content-center">Música</p>
+        <p className="bg-[#FFFFFF1A] text-white place-content-center">Mixes</p>
       </div>
     </div>
   );
