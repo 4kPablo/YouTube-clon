@@ -10,21 +10,27 @@ export const VideoCard = ({
   date,
 }) => {
   return (
-    <div className="mb-2 relative">
-      <img src={img} alt="thumbnail" className="hover:cursor-pointer" />
-      <p className="absolute bottom-20 right-2 place-content-center bg-black/80 rounded pt-[1px] px-1 font-medium text-white text-sm font-roboto">
-        {duration}
-      </p>
-      <div className="flex justify-between">
-        <div className="flex">
+    <div className="min-[588px]:w-[270px] min-[588px]:mx-[8px] mb-3">
+      <div className="relative">
+        <p className="absolute bottom-2 right-2 place-content-center bg-black/80 rounded pt-[1px] px-1 font-medium text-white text-sm font-roboto">
+          {duration}
+        </p>
+        <img
+          src={img}
+          alt="thumbnail"
+          className="hover:cursor-pointer min-[550px]:rounded-xl"
+        />
+      </div>
+      <div className="flex ml-[12px] mt-[4px] mb-[16px] justify-between">
+        <div className="flex items-center">
           <img
             src={pfp}
             alt="user logo"
-            className="h-10 m-4 rounded-full hover:cursor-pointer"
+            className="h-10 rounded-full hover:cursor-pointer"
           />
-          <div className="flex flex-col place-content-center hover:cursor-pointer">
-            <p className="text-white font-bold">{title}</p>
-            <ul className="flex text-sm">
+          <div className="flex ml-[12px] flex-col place-content-center hover:cursor-pointer">
+            <p className="text-white text-sm font-bold">{title}</p>
+            <ul className="flex text-xs">
               <li className="text-gray-400">{channel}</li>
               <li className="text-gray-400 font-bold mx-1">·</li>
               <li className="text-gray-400">{views} visualizaciones</li>
@@ -33,7 +39,7 @@ export const VideoCard = ({
             </ul>
           </div>
         </div>
-        <span class="p-4 hover:cursor-pointer hover:bg-[#3F3F3F] h-fit rounded-full material-symbols-outlined text-white">
+        <span className="flex p-4 hover:cursor-pointer hover:bg-[#3F3F3F] h-[48px] w-[48px] rounded-full items-center justify-center material-symbols-outlined text-white">
           more_vert
         </span>
       </div>

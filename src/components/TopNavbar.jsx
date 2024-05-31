@@ -4,7 +4,7 @@ import user_avatar from "../assets/user_avatar.jpg";
 
 export const TopNavbar = () => {
   return (
-    <div className="flex items-center justify-between h-[48px] *:mx-3 *:cursor-pointer border-b border-gray-800">
+    <div className="flex items-center justify-between h-[48px] *:mx-3 *:cursor-pointer">
       <img className="h-5" src={yt_logo} alt="logo" />
       <div className="flex gap-6">
         <span className="material-symbols-outlined pointer-events-none text-gray-500">

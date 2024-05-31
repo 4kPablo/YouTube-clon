@@ -6,26 +6,28 @@ import { videos } from "./videos.js";
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col">
       <TopNavbar />
       <FilterBar />
-      {videos.map((video) => {
-        return (
-          <VideoCard
-            key={video.id}
-            img={video.img}
-            pfp={video.pfp}
-            duration={video.duration}
-            title={video.title}
-            channel={video.channel}
-            views={video.views}
-            date={video.date}
-          />
-        );
-      })}
+      <div className="flex flex-wrap justify-center min-[588px]:mt-[16px]">
+        {videos.map((video) => {
+          return (
+            <VideoCard
+              key={video.id}
+              img={video.img}
+              pfp={video.pfp}
+              duration={video.duration}
+              title={video.title}
+              channel={video.channel}
+              views={video.views}
+              date={video.date}
+            />
+          );
+        })}
+      </div>
       <Spacer />
       <BottomNavbar />
-    </>
+    </div>
   );
 }
 
