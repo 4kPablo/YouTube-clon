@@ -75,7 +75,7 @@ export const videos = [
     pfp: gura_pfp,
     duration: "43:35",
     title: "【SUBNAUTICA】hello i am under the water 🐟",
-    channel: "Gawr Gura",
+    channel: "Gawr Gura Ch. hololive-EN",
     views: "754 K",
     date: "15 minutos",
   },

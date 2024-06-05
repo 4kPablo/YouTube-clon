@@ -6,7 +6,7 @@ export const FilterBar = () => {
       <span className="pointer-events-none shrink-0 px-2 h-8 text-center place-content-center rounded-sm bg-[#FFFFFF1A] text-white material-symbols-outlined">
         explore
       </span>
-      <div className="flex *:font-[Roboto] text-sm text-nowrap *:rounded-lg *:h-8 *:px-3 gap-3">
+      <div className="flex *:font-[Roboto] text-sm font-medium text-nowrap *:rounded-lg *:h-8 *:px-3 gap-3">
         <p className="bg-white place-content-center">Todo</p>
         <p className="bg-[#FFFFFF1A] text-white place-content-center">
           Videojuegos
