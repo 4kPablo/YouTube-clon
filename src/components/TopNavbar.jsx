@@ -5,7 +5,7 @@ import search_black from "../assets/search_black.png";
 import search_gray from "../assets/search_gray.png";
 
 export const TopNavbar = () => {
-  const [isSearchBarActive, setIsSearchBarActive] = useState(true);
+  const [isSearchBarActive, setIsSearchBarActive] = useState(false);
 
   return (
     <>

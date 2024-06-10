@@ -224,7 +224,7 @@ export const videos = [
     img: gatoataque,
     pfp: bebepine_pfp,
     duration: "21:13",
-    title: "👊🐱ME ATACA UN MICHI🐈💩BAÑE UN GATO CON KAKA [StoryTime]",
+    title: "👊🐱ME ATACA UN MICHI🐈🚿BAÑE UN GATO [StoryTime]",
     channel: "🌟Bebepine🌟",
     views: "1,2 M",
     date: "3 años",

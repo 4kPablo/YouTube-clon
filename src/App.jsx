@@ -1,30 +1,23 @@
+import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import { TopNavbar } from "./components/TopNavbar";
 import { BottomNavbar } from "./components/BottomNavbar";
-import { FilterBar } from "./components/FilterBar";
-import { VideoCard } from "./components/VideoCard";
-import { videos } from "./videos.js";
+import { Home } from "./components/home/Home";
+import { Shorts } from "./components/shorts/Shorts";
+import { Subscriptions } from "./components/subscriptions/Subscriptions";
+import { Library } from "./components/library/Library";
 
 function App() {
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   return (
     <div className="flex flex-col">
-      <TopNavbar />
-      <FilterBar />
-      <div className="flex flex-wrap justify-center min-[588px]:mt-[16px]">
-        {videos.map((video) => {
-          return (
-            <VideoCard
-              key={video.id}
-              img={video.img}
-              pfp={video.pfp}
-              duration={video.duration}
-              title={video.title}
-              channel={video.channel}
-              views={video.views}
-              date={video.date}
-            />
-          );
-        })}
-      </div>
+      {isNavbarVisible ? <TopNavbar /> : <></>}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shorts" element={<Shorts />} />
+        <Route path="/subscriptions" element={<Subscriptions />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
       <Spacer />
       <BottomNavbar />
     </div>

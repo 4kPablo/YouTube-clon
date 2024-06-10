@@ -1,5 +1,3 @@
-import React from "react";
-
 export const FilterBar = () => {
   return (
     <div className="flex items-center justify-between h-[49px] *:mx-3 *:cursor-pointer border-y overflow-x-auto no-scrollbar border-[#3f3f3f]">

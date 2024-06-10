@@ -1,5 +1,3 @@
-import React from "react";
-
 export const VideoCard = ({
   img,
   pfp,
@@ -10,9 +8,9 @@ export const VideoCard = ({
   date,
 }) => {
   return (
-    <div className="min-[588px]:w-[270px] min-[588px]:mx-[8px]">
+    <div className="min-[588px]:min-w-[270px] min-[588px]:max-w-[370px] min-[588px]:mx-[8px] min-[874px]:bg-red-800">
       <div className="relative">
-        <p className="absolute bottom-2 right-2 place-content-center bg-black/80 rounded pt-[1px] px-1 font-medium text-white text-sm font-roboto hover:cursor-pointer">
+        <p className="absolute bottom-2 right-2 place-content-center bg-black/70 rounded pt-[1px] px-1 font-medium text-white text-sm font-roboto hover:cursor-pointer">
           {duration}
         </p>
         <img
