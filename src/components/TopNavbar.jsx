@@ -1,19 +1,35 @@
 import { React, useState } from "react";
+import { CustomLink } from "./CustomLink";
 import yt_logo from "../assets/yt_logo.png";
+import yt_textless from "../assets/yt_textless.png";
 import user_avatar from "../assets/user_avatar.jpg";
 import search_black from "../assets/search_black.png";
 import search_gray from "../assets/search_gray.png";
 
 export const TopNavbar = () => {
   const [isSearchBarActive, setIsSearchBarActive] = useState(false);
+  const [isSubsModeActive, setIsSubsModeActive] = useState(false);
 
   return (
     <>
-      <div className="flex items-center justify-between h-[48px] *:mx-3 *:cursor-pointer">
-        <a href=".">
-          <img className="h-5" src={yt_logo} alt="logo" />
-        </a>
-        <div className="flex items-center gap-6">
+      <div className="flex items-center justify-between w-full h-[48px]">
+        <CustomLink to="/">
+          <img
+            className={isSubsModeActive ? "h-[30px] mx-3" : "h-5 mx-3"}
+            src={isSubsModeActive ? yt_textless : yt_logo}
+            alt="logo"
+          />
+        </CustomLink>
+        <p
+          className={
+            isSubsModeActive
+              ? "flex-1 font-roboto text-[15px] font-medium text-white"
+              : "hidden"
+          }
+        >
+          Todas las suscripciones
+        </p>
+        <div className="flex items-center mx-3 gap-6">
           <img
             className="h-5"
             onClick={() => {
@@ -22,9 +38,16 @@ export const TopNavbar = () => {
             src={search_black}
             alt="buscar"
           />
-          <img className="h-6 rounded-full" src={user_avatar} alt="logo" />
+          {isSubsModeActive ? (
+            <span className="h-6 items-center justify-center material-symbols-outlined hover:cursor-pointer text-white">
+              more_vert
+            </span>
+          ) : (
+            <img className="h-6 rounded-full" src={user_avatar} alt="logo" />
+          )}
         </div>
       </div>
+
       {isSearchBarActive ? (
         <SearchBar
           isActive={isSearchBarActive}

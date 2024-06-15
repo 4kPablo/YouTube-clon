@@ -1,8 +1,10 @@
 import { ChannelFilter } from "./ChannelFilter";
 import { VideoCard } from "../VideoCard";
-import { videos } from "../../videos";
+import { videos } from "../../data/videos";
+import { randomize } from "../../randomize";
 
 export const Subscriptions = () => {
+  randomize(videos);
   return (
     <>
       <ChannelFilter />

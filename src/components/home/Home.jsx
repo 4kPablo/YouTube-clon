@@ -1,8 +1,10 @@
 import { FilterBar } from "./FilterBar.jsx";
 import { VideoCard } from "../VideoCard.jsx";
-import { videos } from "../../videos.js";
+import { videos } from "../../data/videos.js";
+import { randomize } from "../../randomize.js";
 
 export const Home = () => {
+  randomize(videos);
   return (
     <>
       <FilterBar />

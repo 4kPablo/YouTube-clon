@@ -8,15 +8,15 @@ export const VideoCard = ({
   date,
 }) => {
   return (
-    <div className="min-[588px]:min-w-[270px] min-[588px]:max-w-[370px] min-[588px]:mx-[8px] min-[874px]:bg-red-800">
+    <div className="min-[588px]:min-w-[270px] min-[588px]:max-w-[397px] min-[588px]:mx-[8px] min-[874px]:w-[270px]">
       <div className="relative">
-        <p className="absolute bottom-2 right-2 place-content-center bg-black/70 rounded pt-[1px] px-1 font-medium text-white text-sm font-roboto hover:cursor-pointer">
+        <p className="absolute bottom-2 right-2 place-content-center bg-black/70 rounded pt-[1px] px-1 font-medium text-white/80 text-xs font-roboto hover:cursor-pointer">
           {duration}
         </p>
         <img
           src={img}
           alt="thumbnail"
-          className="hover:cursor-pointer min-[550px]:rounded-xl"
+          className="hover:cursor-pointer min-[550px]:rounded-md"
         />
       </div>
       <div className="flex ml-[12px] mt-[12px] mb-[16px] justify-between">
