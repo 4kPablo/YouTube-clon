@@ -7,7 +7,7 @@ export const ChannelFilter = () => {
   return (
     <div className="flex items-center justify-between w-full h-[52px] px-3">
       <div className="flex gap-4">
-        {channels.slice(0, 9).map((channel) => {
+        {channels.slice(0, 8).map((channel) => {
           return (
             <div className="flex flex-col items-center">
               <img

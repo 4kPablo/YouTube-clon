@@ -1,8 +1,12 @@
 import React from "react";
-import inicio from "../assets/inicio.png";
-import shorts from "../assets/shorts.png";
-import suscripciones from "../assets/suscripciones.png";
-import mi_biblioteca from "../assets/mi_biblioteca.png";
+import home from "../assets/ui/home.png";
+import home_active from "../assets/ui/home--active.png";
+import shorts from "../assets/ui/shorts.png";
+import shorts_active from "../assets/ui/shorts--active.png";
+import subscriptions from "../assets/ui/subscriptions.png";
+import subscriptions_active from "../assets/ui/subscriptions--active.png";
+import library from "../assets/ui/library.png";
+import library_active from "../assets/ui/library--active.png";
 import { CustomLink } from "./CustomLink";
 
 export const BottomNavbar = () => {
@@ -10,7 +14,7 @@ export const BottomNavbar = () => {
     <div className="flex *:flex-1 fixed bottom-0 items-center justify-around w-full h-[49px] border-t bg-[#0f0f0f] border-gray-800 text-white">
       <CustomLink to="/" className="flex flex-col items-center">
         <img
-          src={inicio}
+          src={home_active}
           alt="Inicio"
           className="h-6 mb-[-2px] hover:cursor-pointer"
         />
@@ -26,7 +30,7 @@ export const BottomNavbar = () => {
       </CustomLink>
       <CustomLink to="/subscriptions" className="flex flex-col items-center">
         <img
-          src={suscripciones}
+          src={subscriptions}
           alt="Suscripciones"
           className="h-6 mb-[-2px] hover:cursor-pointer"
         />
@@ -36,7 +40,7 @@ export const BottomNavbar = () => {
       </CustomLink>
       <CustomLink to="/library" className="flex flex-col items-center">
         <img
-          src={mi_biblioteca}
+          src={library}
           alt="Mi biblioteca"
           className="h-6 mb-[-2px] hover:cursor-pointer"
         />

@@ -4,7 +4,7 @@ import { filters } from "../../data/filters";
 export const FilterBar = () => {
   randomize(filters);
   return (
-    <div className="flex items-center justify-between h-[50px] *:mx-3 *:cursor-pointer border-y overflow-x-auto no-scrollbar border-[#3f3f3f]">
+    <div className="flex items-center justify-between h-[50px] *:mx-3 *:cursor-pointer border-y overflow-x-auto no-scrollbar border-[#333]">
       <span className="pointer-events-none shrink-0 px-2 h-8 text-center place-content-center rounded-sm bg-[#FFFFFF1A] text-white material-symbols-outlined">
         explore
       </span>

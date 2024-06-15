@@ -1,10 +1,10 @@
 import { React, useState } from "react";
 import { CustomLink } from "./CustomLink";
-import yt_logo from "../assets/yt_logo.png";
-import yt_textless from "../assets/yt_textless.png";
-import user_avatar from "../assets/user_avatar.jpg";
-import search_black from "../assets/search_black.png";
-import search_gray from "../assets/search_gray.png";
+import yt_logo from "../assets/ui/yt_logo.png";
+import yt_textless from "../assets/ui/yt_textless.png";
+import user_avatar from "../assets/ui/user_avatar.jpg";
+import search_black from "../assets/ui/search--black.png";
+import search_gray from "../assets/ui/search--gray.png";
 
 export const TopNavbar = () => {
   const [isSearchBarActive, setIsSearchBarActive] = useState(false);
