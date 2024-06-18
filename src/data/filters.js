@@ -23,4 +23,7 @@ export const filters = [
   "ASMR",
   "Banda sonora",
   "Visto",
+  "No Man's Sky",
+  "Dibujo",
+  "Audio comentario",
 ];
