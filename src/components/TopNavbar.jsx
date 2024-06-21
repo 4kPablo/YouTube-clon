@@ -1,5 +1,6 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { CustomLink } from "./CustomLink";
+import { useLocation } from "react-router-dom";
 import yt_logo from "../assets/ui/yt_logo.png";
 import yt_textless from "../assets/ui/yt_textless.png";
 import user_avatar from "../assets/ui/user_avatar.jpg";
@@ -8,7 +9,16 @@ import search_gray from "../assets/ui/search--gray.png";
 
 export const TopNavbar = () => {
   const [isSearchBarActive, setIsSearchBarActive] = useState(false);
-  const [isSubsModeActive, setIsSubsModeActive] = useState(false);
+  const [isSubsModeActive, setIsSubsModeActive] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/all_subscriptions") {
+      setIsSubsModeActive(true);
+    } else {
+      setIsSubsModeActive(false);
+    }
+  }, [location.pathname]);
 
   return (
     <>

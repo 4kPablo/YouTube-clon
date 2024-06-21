@@ -41,6 +41,20 @@ export const Home = () => {
           );
         })}
         <MoreTopics />
+        {videos.slice(15).map((video) => {
+          return (
+            <VideoCard
+              key={video.id}
+              img={video.img}
+              pfp={video.pfp}
+              duration={video.duration}
+              title={video.title}
+              channel={video.channel}
+              views={video.views}
+              date={video.date}
+            />
+          );
+        })}
       </div>
     </>
   );

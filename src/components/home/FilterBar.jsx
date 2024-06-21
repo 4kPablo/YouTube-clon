@@ -10,7 +10,7 @@ export const FilterBar = () => {
       </span>
       <div className="flex *:font-[Roboto] text-sm font-medium text-nowrap *:rounded-lg *:h-8 *:px-3 gap-3">
         <p className="bg-white place-content-center">Todo</p>
-        {filters.map((filter) => {
+        {filters.slice(0, 19).map((filter) => {
           return (
             <p className="bg-[#FFFFFF1A] text-white place-content-center">
               {filter}

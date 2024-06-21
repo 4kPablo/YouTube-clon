@@ -21,6 +21,16 @@ body {
   font-style: normal;
 }
 
+.truncate-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Número de líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em; /* Altura para dos líneas */
+  /* line-height: 1.5em; Altura de la línea */
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     "FILL" 0,
