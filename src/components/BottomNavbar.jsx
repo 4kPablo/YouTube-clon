@@ -51,7 +51,7 @@ export const BottomNavbar = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex *:flex-1 fixed bottom-0 items-center justify-around w-full h-[49px] border-t bg-[#0f0f0f] border-gray-800 text-white">
+    <div className="flex *:flex-1 fixed bottom-0 z-50 items-center justify-around w-full h-[49px] border-t bg-[#0f0f0f] border-gray-800 text-white">
       <CustomLink to="/" className="flex flex-col items-center">
         <img
           src={homeIsActive ? home_active : home}

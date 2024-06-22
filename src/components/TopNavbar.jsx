@@ -22,7 +22,7 @@ export const TopNavbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between w-full h-[48px]">
+      <div className="flex items-center justify-between w-full z-50 h-[48px]">
         <CustomLink to="/">
           <img
             className={isSubsModeActive ? "h-[30px] mx-3" : "h-5 mx-3"}
@@ -72,7 +72,7 @@ export const TopNavbar = () => {
 
 const SearchBar = ({ isActive, setIsActive }) => {
   return (
-    <div className="flex absolute justify-center items-center h-[49px] px-4 w-full bg-[#212121]">
+    <div className="flex absolute justify-center items-center h-[49px] z-50 px-4 w-full bg-[#212121]">
       <span
         className="material-symbols-outlined hover:cursor-pointer text-white mr-4"
         onClick={() => {

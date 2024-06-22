@@ -5,7 +5,7 @@ export const History = () => {
   randomize(videos);
   return (
     <div className="flex flex-col font-roboto w-full *:cursor-pointer">
-      <div className="flex justify-between mx-3">
+      <div className="flex justify-between mx-2 items-center">
         <div className="flex items-center">
           <span className="material-symbols-outlined font-extralight text-3xl mr-2 text-white">
             history
@@ -14,7 +14,9 @@ export const History = () => {
             Historial
           </h2>
         </div>
-        <p className="place-content-center text-sm text-[#3ea6ff]">Ver todo</p>
+        <p className="place-content-center font-semibold text-sm rounded-full w-fit h-10 px-3 hover:bg-blue-600/30 text-[#3ea6ff]">
+          Ver todo
+        </p>
       </div>
       <div className="flex overflow-x-auto no-scrollbar *:font-[Roboto] text-sm font-medium">
         {videos.slice(0, 16).map((video) => {
