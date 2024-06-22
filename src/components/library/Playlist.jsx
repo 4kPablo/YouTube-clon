@@ -12,7 +12,7 @@ export const Playlists = ({
   return (
     <div className="flex mx-4 my-2 *:shrink-0" key={id}>
       <div className="relative flex flex-col items-center">
-        <div className="absolute flex items-center bottom-2 right-2 place-content-center bg-black/55 rounded pt-[1px] px-1 font-medium text-white text-xs font-roboto hover:cursor-pointer">
+        <div className="absolute flex items-center bottom-2 right-2 place-content-center bg-black/55 rounded pt-[1px] px-1 z-20 font-medium text-white text-xs font-roboto hover:cursor-pointer">
           <span class="material-symbols-outlined">playlist_play</span>
           <p className="ml-1">{videoCount}</p>
         </div>
